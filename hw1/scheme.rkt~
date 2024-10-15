@@ -1,0 +1,61 @@
+;;
+;; DO NOT REMOVE THESE TWO LINES
+;;
+#lang racket
+(provide (all-defined-out))
+
+;;
+;; Problem 1
+;;
+;; Number Integer -> Number
+;;
+;; Compute the falling factorial x to the n falling
+;;
+
+(define (falling x n)
+  'not-implemented)
+;;
+;; Problem 2
+;;
+;; Integer Integer -> Integer
+;;
+;; Compute the Stirling number of the second kind, n subset k
+;;
+
+(define (S n k)
+  'not-implemented)
+
+;;
+;; Problem 3
+;;
+;; List List -> List
+;;
+;; Produce a list of pairs where the first element of each pair is take from
+;; the first arguments xs and the second element of each pair is taken from the
+;; second argument, ys.
+;;
+
+(define (zip xs ys)
+  'not-implemented)
+
+;;
+;; Problem 4
+;;
+;; (Number -> Number) -> (Number -> Number)
+;;
+;; Compute the forward difference operator for f.
+;;
+
+(define (delta f)
+  'not-implemented)
+
+;;
+;; Problem 5
+;;
+;; (Any -> Number) -> List -> Any
+;;
+;; Compute the element x in xs for which (f x) is greatest.
+;;
+
+(define (argmax f xs)
+  'not-implemented)

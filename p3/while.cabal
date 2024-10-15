@@ -1,0 +1,70 @@
+name:          while
+version:       0.1
+cabal-version: >= 1.10
+
+build-type: Simple
+
+library
+  build-depends:
+    base >= 4   && < 5,
+    mtl  >= 2.2 && < 2.3
+
+  exposed-modules:
+    Parsing
+    While.Big
+    While.Env
+    While.Monad
+    While.ParMonad
+    While.Parser
+    While.Small
+    While.Syntax
+
+  hs-source-dirs: src
+
+  default-language: Haskell2010
+
+  default-extensions: FlexibleContexts, MultiParamTypeClasses
+
+  ghc-options: -Wall
+
+executable bigwhile
+  main-is: BigMain.hs
+
+  build-depends:
+    base      >= 4   && < 5,
+    haskeline >= 0.8 && < 0.9,
+    mtl       >= 2.2 && < 2.3
+
+  other-modules:
+    Parsing
+    While.Big
+    While.Env
+    While.Monad
+    While.ParMonad
+    While.Parser
+    While.Small
+    While.Syntax
+
+  hs-source-dirs: src
+
+  default-language: Haskell2010
+
+  default-extensions: FlexibleContexts, MultiParamTypeClasses
+
+  ghc-options: -Wall
+
+test-suite spec
+  type:    exitcode-stdio-1.0
+  main-is: Spec.hs
+
+  hs-source-dirs: test
+
+  build-depends:
+    while,
+    base  >= 4    && < 5,
+    hspec >= 2.10 && < 2.11,
+    mtl   >= 2.2  && < 2.3
+
+  default-language: Haskell2010
+
+  default-extensions: FlexibleContexts, MultiParamTypeClasses

@@ -1,0 +1,1 @@
+("8.10" ta6osx ("095b99b9742ca59068a373f4710284d96339bf31" . "9d7314a00569c2fe09c8192f4db24cf2dc67d48e") #"/Users/mike/hw0-mike-romello/intro.rkt" (collects #"drracket" #"private" #"drracket-errortrace-key.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt") (collects #"rackunit" #"main.rkt") (collects #"rackunit" #"text-ui.rkt"))
